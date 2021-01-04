@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.paragraph{
+  flex-basis: 50%;
+  display: inline;
+  /* background-color: mediumseagreen; */
+}
+.about_main {
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+.main_paragraph{
+  
+  flex-basis: 50%;
+  /* background-color: chartreuse; */
+  /* display: inline; */
+}
+.main_paragraph ,  h1, .mainP{
+  padding: 7px;
+}
+.main_paragraph p{
+  margin-right:  55px;
+  color:black ;
+}
+.main_paragraph a{
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+  color: #90AEFA;
+}
+.main_paragraph p{
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.anchor_paragraph{
+  margin-top: 35px;
+  height: 50%;
+  padding: 10px;
+  /* background-color: mediumslateblue; */
+  margin-left: 7px;
+  
+}
+.picture{
+  flex-basis: 50%;
+  /* background-color: crimson; */
+}
+.anchor_paragraph a{
+  font-size: 24px;
+  font-weight: 700px;
+  line-height: 29.11px;
+  font-style: normal;
+  padding-top: 5px;
+  text-decoration: none;
+  color:#90AEFA;
+}
+.anchor_paragraph p{
+  padding-bottom: 10px;
+  font-weight: 700;
+  line-height:21.83px ;
+  font-size: 18px;
+}
+.picture img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+/* media query for resposiveness */
+@media screen and (max-width: 875px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .about_main{
+    padding-top:35px ;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .paragraph, .picture{
+    padding: 15px 0px;
+  
+  }
+  .paragraph{
+    margin-left: 8%;
+    /* margin-right: ; */
+    width: 92%;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    
+  }
+  .paragraph p{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .anchor_paragraph{
+    display: none
+  }
+}
